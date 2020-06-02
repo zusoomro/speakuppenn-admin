@@ -1,1 +1,1 @@
-# speakuppenn-admin
+# The admin site for SpeakUpPenn

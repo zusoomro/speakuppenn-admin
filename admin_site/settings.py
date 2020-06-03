@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'content.apps.ContentConfig',
 ]
 
+# Configure cors headers
 CORS_ORIGIN_WHITELIST = [
     "https://speakuppenn.com",
 ]
@@ -139,6 +140,3 @@ DATABASES['default'] = dj_database_url.config(
 
 # Activate Django-Heroku.
 django_heroku.settings(locals())
-
-# Configure cors headers
-'corsheaders',

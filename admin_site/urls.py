@@ -19,6 +19,7 @@ from django.urls import include, path
 admin.site.site_header = "Speak Up Penn Portal"
 admin.site.site_title = "Speak Up Penn Administration"
 admin.site.index_title = "SUP Admin"
+admin.site.site_url = "www.speakuppenn.com"
 
 
 urlpatterns = [

@@ -39,14 +39,21 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework',
 
+    # Added apps
+    'rest_framework',
+    'corsheaders',
 
     # Our app
     'content.apps.ContentConfig',
 ]
 
+CORS_ORIGIN_WHITELIST = [
+    "https://speakuppenn.com",
+]
+
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -132,3 +139,6 @@ DATABASES['default'] = dj_database_url.config(
 
 # Activate Django-Heroku.
 django_heroku.settings(locals())
+
+# Configure cors headers
+'corsheaders',

@@ -8,7 +8,7 @@ class Match(models.Model):
     created = models.DateTimeField(auto_now_add=True)
     name = models.CharField(max_length=30)
     notes = models.CharField(max_length=100, blank=True, default='')
-    link = models.CharField(max_length=200)
+    link = models.URLField()
 
     def __str__(self):
         return 'Matching Organization: ' + self.name

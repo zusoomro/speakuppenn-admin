@@ -1,1 +1,1 @@
-web: gunicorn admin_site.wsgi
+web: gunicorn --preload admin_site.wsgi

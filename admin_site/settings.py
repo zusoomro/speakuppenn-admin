@@ -54,6 +54,10 @@ CORS_ORIGIN_WHITELIST = [
     "http://localhost:8000",
 ]
 
+# Configure SSL
+SECURE_SSL_REDIRECT = True
+SECURE_PROXY_SSL_HEADER = ('X-Forwarded-Proto', 'https')
+
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',

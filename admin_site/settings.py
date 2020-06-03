@@ -51,6 +51,7 @@ INSTALLED_APPS = [
 # Configure cors headers
 CORS_ORIGIN_WHITELIST = [
     "https://speakuppenn.com",
+    "http://localhost:8000",
 ]
 
 MIDDLEWARE = [

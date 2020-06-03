@@ -127,8 +127,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 # Configure heroku postgres
-DATABASES['default'] = dj_database_url.config(
-    conn_max_age=600, ssl_require=True)
+# DATABASES['default'] = dj_database_url.config(
+#     conn_max_age=600, ssl_require=True)
 
 # Activate Django-Heroku.
 django_heroku.settings(locals())

@@ -27,7 +27,7 @@ SECRET_KEY = '%o^hho9b*u(v1inn2v%n&75&^vv%n9s1j_px#b&x9_rei=r5j#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["https://speakuppenn.herokuapp.com"]
 
 
 # Application definition
